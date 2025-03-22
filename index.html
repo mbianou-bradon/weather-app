@@ -4,32 +4,188 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
+    <link rel="stylesheet" href="styles/searchBar.css" />
+    <link rel="stylesheet" href="styles/search_result.css" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <div>
+    <div class="main_container">
       <!--  Hero section -->
-      <section>
+      <section class="hero_section">
         <!-- search bar -->
-        <form>
+        <form class="search_form">
           <!-- search icon -->
-          <div></div>
-          <input type="text" name="" id="" />
-          <button>search</button>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m19.485 20.154l-6.262-6.262q-.75.639-1.725.989t-1.96.35q-2.402 0-4.066-1.663T3.808 9.503T5.47 5.436t4.064-1.667t4.068 1.664T15.268 9.5q0 1.042-.369 2.017t-.97 1.668l6.262 6.261zM9.539 14.23q1.99 0 3.36-1.37t1.37-3.361t-1.37-3.36t-3.36-1.37t-3.361 1.37t-1.37 3.36t1.37 3.36t3.36 1.37"
+              />
+            </svg>
+          </div>
+
+          <input
+            class="search_input"
+            type="text"
+            name="search"
+            id="searchBar"
+            placeholder="Search for places"
+          />
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <g fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  d="M2 12h3m14 0h3M12 22v-3m0-14V2"
+                  opacity="0.5"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 12h-2m2 0h2m-2 0v2m0-2v-2"
+                />
+              </g>
+            </svg>
+          </button>
         </form>
         <!-- search results -->
-        <div>
+        <div class="search_result_container">
           <!-- search result icon -->
-          <div></div>
-          <div>
-            <p>12oC</p>
-            <p>Saturday, 12:00</p>
+          <div class="search_result__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="512"
+              height="512"
+              viewBox="0 0 512 512"
+            >
+              <defs>
+                <clipPath id="meteoconsSunHot0">
+                  <path fill="none" d="M0 0h512L0 512V0z" />
+                </clipPath>
+                <symbol id="meteoconsSunHot1" viewBox="0 0 375 375">
+                  <circle
+                    cx="187.5"
+                    cy="187.5"
+                    r="84"
+                    fill="none"
+                    stroke="#fbbf24"
+                    stroke-miterlimit="10"
+                    stroke-width="15"
+                  />
+                  <path
+                    fill="none"
+                    stroke="#fbbf24"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    stroke-width="15"
+                    d="M187.5 57.2V7.5m0 360v-49.7m92.2-222.5l35-35M60.3 314.7l35.1-35.1m0-184.4l-35-35m254.5 254.5l-35.1-35.1M57.2 187.5H7.5m360 0h-49.7"
+                  >
+                    <animateTransform
+                      additive="sum"
+                      attributeName="transform"
+                      dur="6s"
+                      repeatCount="indefinite"
+                      type="rotate"
+                      values="0 187.5 187.5; 45 187.5 187.5"
+                    />
+                  </path>
+                </symbol>
+              </defs>
+              <g clip-path="url(#meteoconsSunHot0)">
+                <use
+                  width="375"
+                  height="375"
+                  href="#meteoconsSunHot1"
+                  transform="translate(68.5 68.5)"
+                />
+              </g>
+              <path
+                fill="none"
+                stroke="#cbd5e1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="12"
+              >
+                <animate
+                  attributeName="d"
+                  calcMode="spline"
+                  dur="1s"
+                  keySplines=".42, 0, .58, 1; .42, 0, .58, 1"
+                  repeatCount="indefinite"
+                  values="M197.48,355.79c11.43-12,24.46.42,35.89-11.58s-1.61-24.41,9.82-36.41,24.46.41,35.89-11.59-1.6-24.41,9.82-36.41,24.47.41,35.9-11.59-1.61-24.41,9.82-36.41,24.47.41,35.9-11.59; M195.1,353.28c11.42-12,28.8,4.56,40.23-7.44s-6-28.55,5.47-40.55,28.81,4.55,40.24-7.45-6-28.55,5.48-40.55,28.81,4.55,40.23-7.45-5.95-28.55,5.49-40.55,28.8,4.55,40.23-7.45; M197.48,355.79c11.43-12,24.46.42,35.89-11.58s-1.61-24.41,9.82-36.41,24.46.41,35.89-11.59-1.6-24.41,9.82-36.41,24.47.41,35.9-11.59-1.61-24.41,9.82-36.41,24.47.41,35.9-11.59"
+                />
+              </path>
+              <path
+                fill="none"
+                stroke="#cbd5e1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="12"
+              >
+                <animate
+                  attributeName="d"
+                  begin="-.5s"
+                  calcMode="spline"
+                  dur="1s"
+                  keySplines=".42, 0, .58, 1; .42, 0, .58, 1"
+                  repeatCount="indefinite"
+                  values="M257.48,355.79c11.43-12,24.46.42,35.89-11.58s-1.61-24.41,9.82-36.41,24.46.41,35.89-11.59-1.6-24.41,9.82-36.41,24.47.41,35.9-11.59-1.61-24.41,9.82-36.41,24.47.41,35.9-11.59; M255.1,353.28c11.42-12,28.8,4.56,40.23-7.44s-5.95-28.55,5.47-40.55,28.81,4.55,40.24-7.45-6-28.55,5.48-40.55,28.81,4.55,40.23-7.45-5.95-28.55,5.49-40.55,28.8,4.55,40.23-7.45; M257.48,355.79c11.43-12,24.46.42,35.89-11.58s-1.61-24.41,9.82-36.41,24.46.41,35.89-11.59-1.6-24.41,9.82-36.41,24.47.41,35.9-11.59-1.61-24.41,9.82-36.41,24.47.41,35.9-11.59"
+                />
+              </path>
+            </svg>
+          </div>
+          <div class="search_result__item">
+            <p class="search_result__item__temp">12oC</p>
+            <p>Saturday, <span> 12:00</span></p>
           </div>
         </div>
         <!-- search aside -->
-        <div>
-          <p>Mostly cloudy</p>
-          <p>Rain</p>
+        <div class="search_aside">
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M5.5 20A5.5 5.5 0 0 1 0 14.5A5.5 5.5 0 0 1 5.5 9c1-2.35 3.3-4 6-4c3.43 0 6.24 2.66 6.5 6.03l.5-.03c2.5 0 4.5 2 4.5 4.5S21 20 18.5 20zm0-10C3 10 1 12 1 14.5S3 19 5.5 19h13a3.5 3.5 0 0 0 3.5-3.5a3.5 3.5 0 0 0-3.5-3.5c-.56 0-1.1.13-1.57.37c.07-.28.07-.57.07-.87A5.5 5.5 0 0 0 11.5 6a5.51 5.51 0 0 0-5.31 4.05z"
+              />
+            </svg>
+            Mostly cloudy
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 48 48"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+                d="M40 6v36M29 16v26M19 26v16M8 36v6"
+              />
+            </svg>
+            Rain
+          </p>
           <img src="" alt="" />
         </div>
       </section>

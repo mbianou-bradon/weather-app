@@ -1,0 +1,26 @@
+.search_form {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.search_input {
+  width: 100%;
+  padding: 8px 12px;
+  background: transparent;
+  border: 0;
+}
+
+.search_input:focus {
+  border: 0;
+}
+
+.search_input::placeholder {
+  color: #000;
+}
+
+.search_form button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
