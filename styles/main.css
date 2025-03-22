@@ -18,3 +18,12 @@
   flex-direction: column;
   gap: 24px;
 }
+
+.main_section__container {
+  background: #f7f6f9;
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}

@@ -1,0 +1,37 @@
+.main_section__today__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.main_section__today__subcomtainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.main_section__today__subcomtainer h5 {
+  font-size: 1.8rem;
+  line-height: 48px;
+  color: #a7a7a7;
+}
+
+.main_section__today__subcomtainer p {
+  font-size: 2.8rem;
+  line-height: 52px;
+  font-weight: bold;
+}
+
+.main_section__today__subcomtainer__footnote {
+  font-size: 1.2rem !important;
+  line-height: 24px !important;
+  color: black !important;
+}

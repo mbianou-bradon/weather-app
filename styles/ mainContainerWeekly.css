@@ -1,0 +1,30 @@
+.main_section__weekly__container {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.main_section__weekly__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  background: white;
+  width: 100%;
+  max-width: 150px;
+  padding: 12px 24px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.main_section__weekly__item svg {
+  width: 100%;
+  font-size: 42px;
+}
+.main_section__weekly__item p {
+  font-size: 1.2rem;
+}
