@@ -2,17 +2,23 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .search_result__icon {
   max-width: 400px;
-  max-height: 300px;
+  /* max-height: 250px; */
 }
 .search_result__icon svg {
   width: 100%;
-  height: 100%;
+  height: auto;
+}
+
+.search_aside{
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(72, 132, 160); */
 }
 
 .search_result__item p,
@@ -22,6 +28,7 @@
   display: flex;
   gap: 4px;
   align-items: center;
+
 }
 
 .search_result__item .search_result__item__temp {
@@ -46,3 +53,5 @@
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
 }
+
+
