@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  padding-block: 12px 24px;
+
 }
 
 .header_container .header_container__filter__container ul,
@@ -16,17 +16,27 @@
 }
 
 .header_container .header_container__filter__container ul li {
-  font-size: 2rem;
-  line-height: 48px;
+  font-size: 1.4rem;
+  line-height: 32px;
   color: gray;
   cursor: pointer;
+  border-block-end: 2px solid transparent;
+}
+.sup{
+  font-size: 40px;
+  color: #000 !important;
 }
 
 .is__header__filter__active {
   font-weight: bold;
-  padding-block-end: 2px;
   color: black !important;
-  border-block-end: 2px solid black;
+  border-block-end: 2px solid black !important;
+}
+
+.unite_isActive {
+  color: white;
+  font-weight: 800;
+  background: black !important;
 }
 
 .header_container_right_side__menu {

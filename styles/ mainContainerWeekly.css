@@ -20,6 +20,10 @@
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+.sup_2{
+  font-size: 16px;
+  color: black;
+}
 
 .main_section__weekly__item svg {
   width: 100%;
